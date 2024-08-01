@@ -1,0 +1,33 @@
+body {
+    font-family: "Roboto Mono","Arial","Helvetica";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.imgresult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-bottom: 25px;
+}
+
+.imgresult > img {
+    object-fit: cover;
+    image-rendering: optimizeQuality;
+}

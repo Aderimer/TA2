@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto Mono","Arial","Helvetica";
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-container > form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30vh;
+    transform: scale(1.5);
+    gap: 5px;
+}
+
+.form-input {
+    padding: 2px;
+    border: rgba(128, 128, 128, 0.521) solid 0.5px;
+}
+
+.form-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: grab;
+    padding: 2px;
+}

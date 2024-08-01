@@ -1,0 +1,21 @@
+<div class="main-container">
+    <section class="collections">
+        
+    <% if (result !== null) { %>
+         
+        <% result.forEach(function(post) { %>
+
+            <a class="wrapper" href="/samlinger/<%= post._id %>">
+                <div class="link-container">
+                    <h1><%= post._id %></h1>
+
+
+                </div>
+            </a>
+        <% }) %>
+    <% } else { %>
+            <h1>Noe gikk galt...</h1>
+    <% } %>
+
+    </section>
+</div>

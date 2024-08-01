@@ -1,0 +1,23 @@
+<a href="/admin/dashboard">&larr; Tilbake</a>
+<div class=admin-title>
+        <h2>Legg ut nytt bilde :)</h2>
+</div>
+
+<form action="/admin/add-post" method="POST" enctype="multipart/form-data">
+
+        <label for="title"><b>Tittel</b></label>
+        <input type="text" placeholder="Bilde navn" name="title"/>
+
+        <label for="alt"><b>Beskrivelse</b></label>
+        <input type="text" placeholder="Beskrivelse" name="alt"/>
+
+        <label for="category"><b>Samling</b></label>
+        <input type="text" placeholder="Navn på samling" name="category"/>
+
+        <label for="image"><b>Bilde</b></label>
+        <input type="file" name="image" />
+        
+
+
+        <input type="submit" value="Upload" class="form-btn"/>
+</form>

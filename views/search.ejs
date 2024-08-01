@@ -1,0 +1,20 @@
+<div class="search-container">
+    <h1 class="search-header">Resultater:</h1>
+
+    <section class="results">
+
+        <ul>
+                <% data.forEach(post => { %>
+                    
+                    <li>
+                        <a class="imgresult" href="/bilde/<%=  post._id %>">
+                            <h1><%= post.title %></h1>
+                            <img src="<%= s3 %><%= post.imageName %>" width="400" height="400" />
+                        </a>
+                    </li>
+                <% }) %>
+           
+
+        </ul>
+    </section>
+</div>

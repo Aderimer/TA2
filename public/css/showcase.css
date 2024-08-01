@@ -1,0 +1,23 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+
+    /* Text Settings */
+    font-size: small;
+    font-family: "Roboto Mono", Arial, sans-serif;
+}
+
+
+img {
+    image-rendering: optimizeQuality;
+    max-width: 110vw;
+    max-height: 80vh;
+}

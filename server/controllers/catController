@@ -1,0 +1,6 @@
+const Post = requires('../models/Post.js');
+
+exports.getAllPosts = async (req, res) => {
+    console.log(req.query);
+}
+

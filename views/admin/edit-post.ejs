@@ -1,0 +1,28 @@
+<a href="/admin/dashboard">&larr; Tilbake</a>
+<div class=admin-title>
+        <h2>Rediger bilde</h2>
+
+        <form action="/admin/delete-post/<%= data._id %>?_method=DELETE" enctype="multipart/form-data" method="POST">
+            <input type="submit" value="Delete" class="form-btn-delete">
+        </form>
+
+</div>
+
+<div class="form-edit">
+        <img class="edit-image" src="<%= s3 %><%= data.imageName %> " height="275" width="275" >
+
+        <form class="editform" action="/admin/edit-post/<%= data._id %>?_method=PUT" method="POST">
+
+                <label for="title"><b>Tittel</b></label>
+                <input type="text" placeholder="Bilde navn" name="title" value="<%= data.title %>"/>
+
+                <label for="alt"><b>Beskrivelse</b></label>
+                <input type="text" placeholder="Bildebeskrivelse" name="alt" value="<%= data.alt %>"/>
+
+                <label for="category"><b>Samling</b></label>
+                <input type="text" placeholder="Navn på samling" name="category" value="<%= data.category %>">
+
+                <input type="submit" value="Oppdater" class="form-btn"/>
+        </form>
+</div>
+        

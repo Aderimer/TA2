@@ -1,0 +1,7 @@
+<div class="samling-container">
+    <% posts.forEach(function(post) { %>
+        <li>
+            <img src="<%= s3 %><%= post.imageName %>" height="500" width="500"/>
+        </li>
+    <% }) %>
+</div>

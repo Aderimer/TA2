@@ -1,0 +1,61 @@
+.footer {
+    font-size: 12px;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    margin-top: 100px;
+    padding: 5px;
+    height: 100px;
+}
+
+.footer-link {
+    cursor: grab;
+    text-decoration: underline;
+    color: inherit;
+}
+
+.legal {
+    width: 500px;
+}
+
+.footer-button {
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    cursor:grab;
+}
+
+@media screen and (max-width: 1080px) {
+    .footer {
+        font-size: 8px;
+        height: 60px;
+    }
+
+    .legal {
+        max-width: 60vw;
+        object-fit: contain;
+        overflow: scroll;
+    }
+
+    .footer-button {
+        transform: scale(0.5);
+        position: relative;
+        right: 40px;
+        transition: all 0.2s ease-out;
+    }
+
+    .footer-button:hover {
+        transform: scale(0.6);
+    }
+    
+}

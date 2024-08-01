@@ -1,0 +1,47 @@
+.main-container {
+    font-family: "Roboto Mono","Arial","Helvetica";
+    position: relative;
+    top: 10vh;
+}
+
+.collections  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 90vw;
+    max-height: 90vh;
+    flex-wrap: wrap;
+}
+
+.link-container {
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/galleri.svg);
+    background-color: black;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform:uppercase;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.mosaic:hover {
+    filter:blur(0);
+    transition: all 0.3s ease-out;
+    transform: scale(1.01);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
