@@ -29,6 +29,14 @@ const connectDB = require('./server/config/db');
 connectDB();
 
 // Middleware
+    //Ensure https protocol over http:
+app.use((req, res, next) => {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+        return res.redirect(`https://${req.headers.host}${req.url}`);
+    }
+    next();
+});
+
 app.use(urlencodedParser);
 app.use(jsonParser);
 app.use(cookieParser());
