@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kannada;
+    src: url(../fonts/kannada.ttf);
+}
+
 .footer {
     font-size: 12px;
     position: fixed;

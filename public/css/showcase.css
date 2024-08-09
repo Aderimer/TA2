@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kannada;
+    src: url(../fonts/kannada.ttf);
+}
+
 body {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -12,7 +17,7 @@ body {
 
     /* Text Settings */
     font-size: small;
-    font-family: "Libre Bodoni", Arial, sans-serif;
+    font-family: "Kannada", Arial, sans-serif;
 }
 
 

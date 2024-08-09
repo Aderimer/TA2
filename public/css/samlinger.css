@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Kannada;
+    src: url(../fonts/kannada.ttf);
+}
+
 .main-container {
-    font-family: "Libre Bodoni","Arial","Helvetica";
+    font-family: "Kannada","Arial","Helvetica";
     position: relative;
     top: 10vh;
 }

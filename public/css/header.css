@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kannada;
+    src: url(../fonts/kannada.ttf);
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +10,7 @@
     top: 0px;
     align-items: center;
     justify-content: center;
-    font-family: "Libre Bodoni", Arial, Helvetica;
+    font-family: "Kannada", Arial, Helvetica;
 }
 
 .nav > a {
@@ -25,14 +30,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: "Libre Bodoni", Arial, Helvetica;
+    font-family: "Kannada", Arial, Helvetica;
 }
 
 .searchForm > input {
     width: 20vw;
     border: solid 0.5px rgba(0, 0, 0, 0.1);
     height: 25px;
-    font-family: "Libre Bodoni", Arial, Helvetica;
+    font-family: "Kannada", Arial, Helvetica;
 }
 
 .search-btn {
@@ -42,7 +47,7 @@
     min-width: fit-content;
     width: 100vw;
     cursor: grab;
-    font-family: "Libre Bodoni", Arial, Helvetica;
+    font-family: "Kannada", Arial, Helvetica;
 }
 
 .register-container {

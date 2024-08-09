@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kannada;
+    src: url(../fonts/kannada.ttf);
+}
+
 .samling-container {
     display: flex;
     flex-direction: row;
