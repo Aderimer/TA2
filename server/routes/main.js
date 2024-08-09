@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
         let perPage = 20;
         let page = req.query.page || 1;
 
-        const data = await Post.aggregate([ { $sort: { createdAt: 1 } }])
+        const data = await Post.aggregate([ { $sort: { createdAt: -1 } }])
         .skip(perPage * page - perPage)
         .limit(perPage)
         .exec();
