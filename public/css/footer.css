@@ -40,6 +40,16 @@
     cursor:grab;
 }
 
+#watermark {
+    position: fixed;
+    right: 1vw;
+    bottom: 1vh;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.349);
+    z-index: 1;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 1080px) {
     .footer {
         font-size: 8px;
