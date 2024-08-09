@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto Mono","Arial","Helvetica";
+    font-family: "Libre Bodoni","Arial","Helvetica";
 }
 
 .admin-container {
@@ -24,8 +24,6 @@ body {
 }
 
 .form-btn {
-    background-color: black;
-    color: white;
     border: none;
     cursor: grab;
     padding: 2px;

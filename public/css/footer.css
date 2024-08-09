@@ -8,12 +8,12 @@
     align-items: center;
     bottom: 0px;
     left: 0px;
-    color: white;
-    background-color: black;
     width: 100%;
     margin-top: 100px;
     padding: 5px;
     height: 100px;
+    background-color: black;
+    color: white;
 }
 
 .footer-link {

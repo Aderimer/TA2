@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     try {
         const s3 = process.env.SSS_URL;
         const locals = {
-            title: "Theas Galleri",
+            title: "Thea Emilie Merli",
             style: "/css/main.css"
         }
 
@@ -55,7 +55,7 @@ router.get('/', async (req, res) => {
 // Kontakt route
 router.get('/kontakt/', (req, res) => {
     const locals = {
-        title: "Kontakt",
+        title: "Contact",
         style: "/css/kontakt.css"
     }
     res.render('kontakt', { locals });
@@ -129,7 +129,7 @@ router.post('/search', async  (req, res) => {
     try {
     const s3 = process.env.SSS_URL;
     const locals = {
-        title: "Resultater",
+        title: "Results",
         style: "/css/search.css"
     }
 
@@ -160,7 +160,7 @@ router.post('/search', async  (req, res) => {
 // Router to show collections
 router.get('/samlinger', (req, res) => {
   const locals = {
-      title: "Samlinger",
+      title: "Collections",
       style: '/css/samlinger.css'
   }
 

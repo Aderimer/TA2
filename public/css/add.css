@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto Mono","Arial","Helvetica";
+    font-family: "Libre Bodoni","Arial","Helvetica";
 }
 form {
     display: flex;
@@ -23,8 +23,7 @@ input[type=file] {
 }
 
 input::file-selector-button {
-    color: white;
-    background-color: black;
+
     border: none;
     padding: 5px;
     cursor: grab;
@@ -33,14 +32,10 @@ input::file-selector-button {
 .form-btn {
     border: none;
     padding: 10px;
-    background-color: black;
-    color: white;
     cursor: grab;
 }
 
 a {
     padding: 10px;
-    background-color: black;
     color: white;
-    text-decoration: none;
 }

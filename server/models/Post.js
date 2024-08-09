@@ -6,7 +6,7 @@ const year = new Date(now).getFullYear();
 const PostSchema = new Schema({
     title: {
         type: String,
-        required: true
+        required: false
     },
     alt: {
         type: String,
@@ -19,16 +19,11 @@ const PostSchema = new Schema({
     imageName: {
         type: String,
         required: true
-    },
-    createdAt: {
-        type: Date,
-        default: year
-    },
-    updatedAt: {
-        type: Date,
-        default: year 
     }
-});
+}, {
+    timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' }
+}
+);
 
 
 module.exports = mongoose.model('Post', PostSchema)

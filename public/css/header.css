@@ -5,16 +5,15 @@
     top: 0px;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto Mono", Arial, Helvetica;
+    font-family: "Libre Bodoni", Arial, Helvetica;
 }
 
 .nav > a {
+    color: black;
     display: flex;
     justify-content: center;
     margin: 15px;
     padding: 10px;
-    background-color: black;
-    color: white;
     height: 100%;
     width: 10%;
     text-decoration: none;
@@ -26,23 +25,24 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-family: "Libre Bodoni", Arial, Helvetica;
 }
 
 .searchForm > input {
     width: 20vw;
     border: solid 0.5px rgba(0, 0, 0, 0.1);
     height: 25px;
+    font-family: "Libre Bodoni", Arial, Helvetica;
 }
 
 .search-btn {
-    background-color: black;
-    color: white;
     border: none;
     height: 25px;
     max-width: 3vw;
     min-width: fit-content;
     width: 100vw;
     cursor: grab;
+    font-family: "Libre Bodoni", Arial, Helvetica;
 }
 
 .register-container {
@@ -62,8 +62,6 @@
 }
 
 .register-container > form > .form-btn {
-    background-color: black;
-    color: white;
     padding: 5px;
     border: none;
     cursor: grab;

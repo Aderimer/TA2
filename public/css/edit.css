@@ -21,8 +21,6 @@
 .form-btn {
     border: none;
     padding: 10px;
-    background-color: black;
-    color: white;
     cursor: grab;
 }
 
@@ -31,8 +29,6 @@ input[type=file] {
 }
 
 input::file-selector-button {
-    color: white;
-    background-color: black;
     border: none;
     padding: 5px;
     cursor: grab;
@@ -59,7 +55,5 @@ img {
 
 a {
     padding: 10px;
-    background-color: black;
-    color: white;
     text-decoration: none;
 }

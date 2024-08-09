@@ -1,10 +1,11 @@
 body {
     overflow-x: hidden;
-    font-family: "Roboto Mono", "Arial", "Helvetica";
+    font-family: "Libre Bodoni", "Arial", "Helvetica";
 }
 
 .main-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

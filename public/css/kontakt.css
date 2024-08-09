@@ -1,10 +1,8 @@
 body {
-    font-family: "Roboto Mono", "Arial", "Helvetica";
+    font-family: "Libre Bodoni", "Arial", "Helvetica";
 }
 
 .form-btn {
-    background-color: black;
-    color: white;
     border: none;
     padding: 10px;
     cursor: grab;

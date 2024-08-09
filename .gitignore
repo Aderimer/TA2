@@ -4,3 +4,4 @@ public/img/uploads/
 app.yaml
 *.code-workspace
 .env
+./server/config/db.js

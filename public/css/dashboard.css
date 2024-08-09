@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto Mono", "Arial", "Helvetica";
+    font-family: "Libre Bodoni", "Arial", "Helvetica";
 }
 
 .dash-bilder {
@@ -15,8 +15,7 @@ body {
 }
 
 .dash-bilder > .btn {
-    background-color: black;
-    color: white;
+
     text-decoration: none;
     cursor: grab;
     padding: 5px;
@@ -52,8 +51,6 @@ body {
 }
 
 .btn {
-    color: white;
-    background-color: black;
     border: none;
     padding: 5px;
     margin: auto 5px auto 0px;
