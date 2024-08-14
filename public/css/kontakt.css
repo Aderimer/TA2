@@ -23,6 +23,7 @@ body {
     min-width: 40vw;
     width: 100%;
     top: 20vh;
+    margin-bottom: 5vh;
 }
 
 .contact-form {
@@ -40,12 +41,17 @@ body {
 
 @media screen and (max-width: 1080px) {
     .contact-form {
-        transform: scale(2);
+        transform: scale(1.5);
         position: absolute;
         top: 25vh;
     }
 
     .form-btn {
         padding: 5px;
+    }
+
+    .contact-container {
+        margin-bottom: 5vh;
+        padding-bottom: 10px;
     }
 }

@@ -19,6 +19,7 @@
     height: 100px;
     background-color: black;
     color: white;
+    z-index: 3;
 }
 
 .footer-link {
