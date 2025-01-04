@@ -31,12 +31,15 @@ connectDB();
 // Middleware
     //Ensure https protocol over http:
 
+/* TEMP HTTPS DISABLING - DEV ONLY
 app.use((req, res, next) => {
     if (req.headers['x-forwarded-proto'] !== 'https') {
         return res.redirect(`https://${req.headers.host}${req.url}`);
     }
     next();
 });
+*/
+
 app.use(urlencodedParser);
 app.use(jsonParser);
 app.use(cookieParser());
@@ -61,11 +64,19 @@ app.use('/admin', require('./server/routes/admin'));
 
 
 // Also middleware - Do not move to other middleware, that breaks stuff... :)
+app.get('/robots.txt', function(req, res) {
+    res.type('text/plain')
+    res.send("User-agent: *\nDisallow: /");
+});
+
 app.use(methodOverride('_method'));
 
 app.use('/public/img/', express.static('./public/img/'));
 app.use(express.static('public'));
 
+
+// favicon
+app.use('/favicon.ico', express.static('public/img/favicon.ico'))
 
 app.listen(PORT, ()=> {
     console.log(`Listening on port ${PORT}`);

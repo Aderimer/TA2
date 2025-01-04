@@ -6,6 +6,14 @@ const Post = require('../models/Post');
 const mongoose = require('mongoose')
 
 
+router.get('/about', (req, res) => {
+    try {
+        console.log("This is the about me page")
+    } catch (error) {
+        
+    }
+})
+
 router.get('/', async (req, res) => {
    
 
@@ -125,6 +133,7 @@ router.get('/bilde/:id', async (req, res) => {
     }
 });
 
+/*
 router.post('/search', async  (req, res) => {
     try {
     const s3 = process.env.SSS_URL;
@@ -156,6 +165,7 @@ router.post('/search', async  (req, res) => {
         console.log(error);
     }
 });
+*/
 
 // Router to show collections
 router.get('/samlinger', (req, res) => {
@@ -197,8 +207,22 @@ router.get('/samlinger', (req, res) => {
         res.status(500).send(err);
     })
   })
+
+
+  router.get('/about', (req, res) => {
+    try {
+        const locals = {
+            title: "About",
+            style: '/css/about.css'
+        }
+
+        const text = Post.
+
+        res.render('about', {locals})
+    } catch (error) {
+        console.log(error);
+    }
+  })
         
-
-
 
 module.exports = router;

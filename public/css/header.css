@@ -6,11 +6,15 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
-    position: static;
-    top: 0px;
+    position: relative;
     align-items: center;
     justify-content: center;
     font-family: "Kannada", Arial, Helvetica;
+    top: 10vh;
+    margin: 5px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .nav > a {
@@ -18,10 +22,19 @@
     display: flex;
     justify-content: center;
     margin: 15px;
-    padding: 10px;
+    padding: 20px;
     height: 100%;
     width: 10%;
     text-decoration: none;
+}
+
+#logo {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 3vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchBar {
@@ -82,11 +95,22 @@
     }
 
     .nav {
-        margin: 5px;
-        justify-content: center;
+        top: 10vh;
+        padding-top: 75px;
     }
 
     .searchForm > input {
         width: 30vw;
+    }
+
+    #logo {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        transform: scale(0.7);
+        left: 0;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
 }
